@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- OFFICE SEGURANÇA · Contato | © 2026 Thiago Vinicius de Souza Meireles -->
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — Office Segurança | Goiânia · MT · PB</title>
+<meta name="description" content="Fale com a Office Segurança: (62) 3434-3432, WhatsApp (62) 99290-9444. Atendimento seg–sex 8h–18h, sáb 8h–12h. Plantão operacional 24h.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060D1A',900:'#0A1628',800:'#10233F'},gold:{DEFAULT:'#C9A227',light:'#E3BB3B'}}}}}</script>
+<link rel="stylesheet" href="assets/css/style.css"></head>
+<body class="bg-[#F6F7F9]">
+<header id="site-header" class="sticky top-0 z-50 bg-navy-900/95 border-b border-white/10"><div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-gold grid place-items-center font-extrabold text-navy-950">O</span><span class="font-display font-extrabold text-white">OFFICE <span class="gold-text">SEGURANÇA</span></span></a>
+<nav class="hidden lg:flex gap-6 text-sm text-white/80 font-medium"><a href="index.html" class="hover:text-white">Início</a><a href="sobre.html" class="hover:text-white">A Office</a><a href="orcamento.html" class="hover:text-white">Simulador</a><a href="contato.html" class="text-gold-light">Contato</a></nav>
+<button id="btn-menu" class="lg:hidden text-white p-2" aria-label="Abrir menu">☰</button></div>
+<div id="mobile-menu" class="hidden bg-navy-950 px-4 py-4 text-white"><a href="index.html" class="block py-2">Início</a><a href="orcamento.html" class="block py-2">Simulador</a></div></header>
+
+<section class="max-w-6xl mx-auto px-4 py-14">
+<h1 class="font-display font-extrabold text-4xl sm:text-5xl">Fale com a <span class="text-navy-800">central Office</span></h1>
+<p class="mt-3 text-slate-600">Comercial em horário útil · plantão operacional 24h para clientes e emergências.</p>
+<div class="mt-8 grid lg:grid-cols-2 gap-6">
+<div class="space-y-4">
+<div class="bg-navy-950 text-white rounded-3xl p-8"><h2 class="font-display font-bold text-xl mb-4">Canais diretos</h2>
+<ul class="space-y-3 text-sm"><li class="flex justify-between gap-3"><span class="text-white/60">Goiás — Goiânia</span><a class="font-bold text-gold-light" href="tel:+556234343432">(62) 3434-3432</a></li>
+<li class="flex justify-between gap-3"><span class="text-white/60">WhatsApp 24h</span><a class="font-bold text-green-400" href="https://wa.me/5562992909444" target="_blank" rel="noopener">(62) 99290-9444</a></li>
+<li class="flex justify-between gap-3"><span class="text-white/60">Mato Grosso</span><a class="font-bold" href="tel:+5565992028167">(65) 99202-8167</a></li>
+<li class="flex justify-between gap-3"><span class="text-white/60">Paraíba</span><a class="font-bold" href="tel:+558331855104">(83) 3185-5104</a></li>
+<li class="flex justify-between gap-3"><span class="text-white/60">Instagram</span><a class="font-bold" href="https://www.instagram.com/officeseguranca" target="_blank" rel="noopener">@officeseguranca</a></li>
+<li class="flex justify-between gap-3"><span class="text-white/60">LinkedIn</span><a class="font-bold" href="https://br.linkedin.com/company/office-segurança" target="_blank" rel="noopener">office-segurança</a></li></ul>
+<p class="mt-5 text-xs text-white/50">Seg–Sex 8h–18h · Sáb 8h–12h · Emergências: plantão 24h</p></div>
+<div class="bg-white border rounded-3xl overflow-hidden"><iframe title="Mapa — Goiânia, Goiás" src="https://www.openstreetmap.org/export/embed.html?bbox=-49.32%2C-16.72%2C-49.18%2C-16.62&layer=mapnik&marker=-16.67%2C-49.25" class="w-full h-72 border-0" loading="lazy"></iframe><p class="text-xs text-slate-500 px-5 py-3">Base operacional: Goiânia/GO · atendimento em todo o estado + MT e PB. <a class="font-bold text-navy-800" href="https://www.google.com/maps/search/?api=1&query=Goi%C3%A2nia+GO" target="_blank" rel="noopener">Abrir no Google Maps →</a></p></div>
+</div>
+<form data-wa-form class="bg-white border rounded-3xl p-7 sm:p-8 space-y-4 h-fit">
+<h2 class="font-display font-bold text-xl">Envie sua mensagem</h2>
+<div><label class="text-xs font-bold uppercase" for="k-nome">Nome*</label><input id="k-nome" name="Nome" required class="mt-1 w-full border rounded-xl px-4 py-3 text-sm" placeholder="Seu nome"></div>
+<div class="grid sm:grid-cols-2 gap-4"><div><label class="text-xs font-bold uppercase" for="k-fone">Telefone*</label><input id="k-fone" name="Telefone" required class="mt-1 w-full border rounded-xl px-4 py-3 text-sm" placeholder="(62) 9 0000-0000"></div>
+<div><label class="text-xs font-bold uppercase" for="k-assunto">Assunto*</label><select id="k-assunto" name="Assunto" required class="mt-1 w-full border rounded-xl px-4 py-3 text-sm bg-white"><option value="">Selecione…</option><option>Orçamento</option><option>Dúvida sobre serviços</option><option>Suporte a cliente</option><option>Parceria / Fornecedor</option><option>Ouvidoria</option></select></div></div>
+<div><label class="text-xs font-bold uppercase" for="k-msg">Mensagem*</label><textarea id="k-msg" name="Mensagem" rows="4" required class="mt-1 w-full border rounded-xl px-4 py-3 text-sm"></textarea></div>
+<button class="w-full bg-navy-950 text-white font-bold py-3.5 rounded-xl">Enviar via WhatsApp</button>
+</form></div></section>
+<footer class="bg-navy-950 text-white"><div class="max-w-7xl mx-auto px-4 py-6 flex justify-between text-xs text-white/45"><p>© <span data-year>2026</span> Office Segurança · por <strong class="text-white/70">Thiago Vinicius de Souza Meireles</strong>.</p><a href="index.html">← Início</a></div></footer>
+<script src="assets/js/app.js" defer></script></body></html>

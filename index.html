@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--
+  OFFICE SEGURANÇA — Portal Institucional Premium
+  © 2026 Thiago Vinicius de Souza Meireles — Todos os direitos reservados.
+  Autor: Thiago Vinicius de Souza Meireles | Presente institucional à Office Segurança.
+  Stack: HTML5 semântico · Tailwind CSS · Vanilla JS · SEO + LGPD + Acessibilidade.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Office Segurança — Segurança Armada, Patrimonial e Facilities em Goiás | Goiânia</title>
+<meta name="description" content="Desde 2016, a Office Segurança protege empresas, condomínios e indústrias em GO, MT e PB com vigilância armada e desarmada, segurança pessoal, portaria, limpeza e segurança eletrônica. Autorizada pela Polícia Federal. Plantão 24h.">
+<meta property="og:title" content="Office Segurança — Proteção de padrão corporativo">
+<meta property="og:description" content="Vigilância armada e desarmada, portaria, limpeza e monitoramento. Autorizada pela Polícia Federal. Orçamento em minutos.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060D1A',900:'#0A1628',800:'#10233F',700:'#16315a'},gold:{DEFAULT:'#C9A227',light:'#E3BB3B',pale:'#FBF3D5'}},fontFamily:{display:['Sora','sans-serif'],body:['Inter','sans-serif']}}}}</script>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A1628'/><path d='M50 12 82 26v24c0 20-13 34-32 38C31 84 18 70 18 50V26z' fill='none' stroke='%23C9A227' stroke-width='7'/><path d='M38 50l8 8 16-16' fill='none' stroke='%23C9A227' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SecurityService","name":"Office Segurança","foundingDate":"2016","telephone":"+55-62-3434-3432","areaServed":["Goiás","Mato Grosso","Paraíba"],"address":{"@type":"PostalAddress","addressLocality":"Goiânia","addressRegion":"GO","addressCountry":"BR"},"sameAs":["https://www.instagram.com/officeseguranca","https://br.linkedin.com/company/office-segurança"],"openingHours":"Mo-Fr 08:00-18:00, Sa 08:00-12:00"}</script>
+</head>
+<body class="font-body">
+
+<!-- TOPBAR -->
+<div class="bg-navy-950 text-white/80 text-xs sm:text-sm border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+    <p id="op-status" class="flex items-center gap-2"></p>
+    <div class="flex items-center gap-4">
+      <a href="tel:+556234343432" class="hover:text-gold-light font-semibold">(62) 3434-3432</a>
+      <a href="https://wa.me/5562992909444?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-1 text-green-400 font-semibold hover:text-green-300">WhatsApp (62) 99290-9444</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="site-header" class="sticky top-0 z-50 bg-navy-900/90 backdrop-blur border-b border-white/10 transition-all">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-3" aria-label="Office Segurança — início">
+      <span class="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-light to-gold grid place-items-center shadow-lg shadow-gold/20">
+        <svg width="26" height="26" viewBox="0 0 100 100" fill="none"><path d="M50 12 82 26v24c0 20-13 34-32 38C31 84 18 70 18 50V26z" stroke="#0A1628" stroke-width="8"/><path d="M38 50l8 8 16-16" stroke="#0A1628" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="leading-tight"><span class="font-display font-800 font-extrabold text-white text-lg tracking-tight block">OFFICE <span class="gold-text">SEGURANÇA</span></span><span class="text-[11px] uppercase tracking-[.22em] text-white/50">Desde 2016 · Polícia Federal</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-white/80" aria-label="Principal">
+      <a href="index.html" class="text-gold-light">Início</a>
+      <a href="sobre.html" class="hover:text-white">A Office</a>
+      <div class="relative group">
+        <button class="hover:text-white inline-flex items-center gap-1 py-2">Serviços <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="absolute left-0 top-full pt-2 hidden group-hover:block">
+          <div class="w-72 rounded-2xl bg-navy-800 border border-white/10 shadow-2xl p-2 text-white">
+            <a href="servicos/seguranca-armada.html" class="block px-4 py-2.5 rounded-xl hover:bg-white/10">Segurança Armada</a>
+            <a href="servicos/seguranca-desarmada.html" class="block px-4 py-2.5 rounded-xl hover:bg-white/10">Segurança Desarmada</a>
+            <a href="servicos/seguranca-pessoal.html" class="block px-4 py-2.5 rounded-xl hover:bg-white/10">Segurança Pessoal / Escolta</a>
+            <a href="servicos/portaria.html" class="block px-4 py-2.5 rounded-xl hover:bg-white/10">Portaria & Controle de Acesso</a>
+            <a href="servicos/limpeza.html" class="block px-4 py-2.5 rounded-xl hover:bg-white/10">Limpeza & Conservação</a>
+            <a href="servicos/eletronica.html" class="block px-4 py-2.5 rounded-xl hover:bg-white/10">Segurança Eletrônica 24h</a>
+          </div>
+        </div>
+      </div>
+      <a href="orcamento.html" class="hover:text-white">Simulador</a>
+      <a href="blog.html" class="hover:text-white">Blog</a>
+      <a href="trabalhe-conosco.html" class="hover:text-white">Trabalhe Conosco</a>
+      <a href="contato.html" class="hover:text-white">Contato</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="orcamento.html" class="btn-shine bg-gold text-navy-950 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-gold-light transition">Solicitar orçamento</a>
+    </div>
+    <button id="btn-menu" class="lg:hidden text-white p-2" aria-expanded="false" aria-label="Abrir menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-navy-950 px-4 py-4 space-y-1 text-white font-medium">
+    <a href="index.html" class="block py-2">Início</a><a href="sobre.html" class="block py-2">A Office</a>
+    <p class="pt-2 text-xs uppercase tracking-widest text-white/40">Serviços</p>
+    <a href="servicos/seguranca-armada.html" class="block py-2 pl-3">· Segurança Armada</a>
+    <a href="servicos/seguranca-desarmada.html" class="block py-2 pl-3">· Segurança Desarmada</a>
+    <a href="servicos/seguranca-pessoal.html" class="block py-2 pl-3">· Segurança Pessoal</a>
+    <a href="servicos/portaria.html" class="block py-2 pl-3">· Portaria</a>
+    <a href="servicos/limpeza.html" class="block py-2 pl-3">· Limpeza</a>
+    <a href="servicos/eletronica.html" class="block py-2 pl-3">· Eletrônica 24h</a>
+    <a href="orcamento.html" class="block py-2 text-gold-light font-bold">Simulador de orçamento</a>
+    <a href="blog.html" class="block py-2">Blog</a><a href="trabalhe-conosco.html" class="block py-2">Trabalhe Conosco</a><a href="contato.html" class="block py-2">Contato</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative bg-navy-900 text-white overflow-hidden">
+  <div class="absolute inset-0 hero-grid"></div>
+  <div class="absolute -top-40 -right-40 w-[560px] h-[560px] rounded-full bg-gold/15 blur-[130px]"></div>
+  <div class="absolute -bottom-52 -left-40 w-[560px] h-[560px] rounded-full bg-blue-600/20 blur-[130px]"></div>
+  <div class="relative max-w-7xl mx-auto px-4 pt-14 pb-16 lg:pt-20 lg:pb-24 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <div class="reveal inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs font-semibold tracking-wide text-gold-light mb-6">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        AUTORIZADA PELA POLÍCIA FEDERAL · LEI Nº 7.102/83
+      </div>
+      <h1 class="reveal font-display font-extrabold text-4xl sm:text-5xl xl:text-6xl leading-[1.05] tracking-tight">Segurança de <span class="gold-text">padrão corporativo</span> para quem não pode parar.</h1>
+      <p class="reveal reveal-d1 mt-5 text-lg text-white/70 max-w-xl">Vigilância armada e desarmada, segurança pessoal, portaria, limpeza e monitoramento eletrônico. Operação com plantão 24h, supervisão dedicada e relatórios transparentes — em Goiás, Mato Grosso e Paraíba.</p>
+      <div class="reveal reveal-d2 mt-8 flex flex-wrap gap-3">
+        <a href="orcamento.html" class="btn-shine bg-gold text-navy-950 font-bold px-7 py-3.5 rounded-xl hover:bg-gold-light transition shadow-xl shadow-gold/25">Simular meu orçamento</a>
+        <a href="https://wa.me/5562992909444?text=Ol%C3%A1%2C%20quero%20falar%20com%20um%20especialista%20da%20Office." target="_blank" rel="noopener" class="glass px-7 py-3.5 rounded-xl font-bold hover:bg-white/15 transition inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-400"></span>Chamar no WhatsApp</a>
+      </div>
+      <dl class="reveal reveal-d3 mt-10 grid grid-cols-3 max-w-md gap-6">
+        <div><dt class="sr-only">Anos de fundação</dt><dd class="font-display text-3xl font-extrabold text-gold-light"><span data-count="10" data-suffix="+">0</span></dd><p class="text-xs text-white/55 mt-1">anos de operação desde 2016</p></div>
+        <div><dt class="sr-only">Experiência da equipe</dt><dd class="font-display text-3xl font-extrabold text-gold-light"><span data-count="30" data-suffix="+">0</span></dd><p class="text-xs text-white/55 mt-1">anos de experiência acumulada</p></div>
+        <div><dt class="sr-only">Cobertura</dt><dd class="font-display text-3xl font-extrabold text-gold-light"><span data-count="24" data-suffix="h">0</span></dd><p class="text-xs text-white/55 mt-1">plantão operacional, 7 dias/semana</p></div>
+      </dl>
+    </div>
+    <div class="reveal reveal-d1 relative">
+      <img class="hero-photo float-slow rounded-3xl w-full h-[480px] object-cover border border-white/15" src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=1200&auto=format&fit=crop" alt="Vigilante profissional em ronda noturna" loading="eager">
+      <div class="absolute -bottom-6 -left-4 sm:left-6 glass rounded-2xl p-4 flex items-center gap-4 max-w-xs">
+        <span class="w-12 h-12 rounded-xl bg-green-500/20 grid place-items-center text-green-400"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="M22 4 12 14l-3-3"/></svg></span>
+        <div><p class="font-bold text-sm">Resposta imediata</p><p class="text-xs text-white/60">Equipe de reserva + supervisão em campo e central 24h.</p></div>
+      </div>
+      <div class="absolute -top-5 -right-2 sm:right-6 bg-white text-navy-900 rounded-2xl px-4 py-3 shadow-2xl">
+        <p class="text-[11px] font-bold uppercase tracking-widest text-gold">NPS operacional</p>
+        <p class="font-display font-extrabold text-2xl">4.9<span class="text-sm font-bold text-slate-500">/5.0</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="relative border-t border-white/10 bg-navy-950/60">
+    <div class="max-w-7xl mx-auto px-4 py-4 overflow-hidden">
+      <div class="ticker-track text-xs font-bold uppercase tracking-[.2em] text-white/50">
+        <span>Condomínios residenciais</span><span class="text-gold">◆</span><span>Indústrias</span><span class="text-gold">◆</span><span>Varejo & Shoppings</span><span class="text-gold">◆</span><span>Hospitais</span><span class="text-gold">◆</span><span>Escolas & Universidades</span><span class="text-gold">◆</span><span>Obras & Usinas</span><span class="text-gold">◆</span>
+        <span>Condomínios residenciais</span><span class="text-gold">◆</span><span>Indústrias</span><span class="text-gold">◆</span><span>Varejo & Shoppings</span><span class="text-gold">◆</span><span>Hospitais</span><span class="text-gold">◆</span><span>Escolas & Universidades</span><span class="text-gold">◆</span><span>Obras & Usinas</span><span class="text-gold">◆</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="max-w-7xl mx-auto px-4 py-16 lg:py-24" id="servicos">
+  <div class="reveal flex flex-wrap items-end justify-between gap-4 mb-10">
+    <div><p class="text-xs font-bold uppercase tracking-[.25em] text-gold mb-2">Portfólio completo</p>
+    <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight">Um parceiro. <span class="text-navy-800">Toda a sua operação protegida.</span></h2></div>
+    <a href="orcamento.html" class="font-bold text-navy-800 underline decoration-gold decoration-2 underline-offset-4 hover:text-black">Comparar serviços no simulador →</a>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <a href="servicos/seguranca-armada.html" class="reveal card-lift group bg-navy-900 text-white rounded-3xl p-7 relative overflow-hidden">
+      <div class="absolute -right-10 -top-10 w-40 h-40 rounded-full bg-gold/20 blur-3xl group-hover:bg-gold/30 transition"></div>
+      <div class="w-12 h-12 rounded-2xl bg-gold grid place-items-center mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <h3 class="font-display font-bold text-xl mb-2">Segurança Armada</h3>
+      <p class="text-sm text-white/65 mb-4">Vigilantes certificados pela Polícia Federal, armamento legalizado, ronda tática e cobertura de reserva garantida.</p>
+      <span class="text-gold-light text-sm font-bold">Ver detalhes →</span>
+    </a>
+    <a href="servicos/seguranca-desarmada.html" class="reveal reveal-d1 card-lift group bg-white rounded-3xl p-7 border border-slate-200">
+      <div class="w-12 h-12 rounded-2xl bg-navy-900 grid place-items-center mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E3BB3B" stroke-width="2.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6.5 8-6.5s8 2.5 8 6.5"/></svg></div>
+      <h3 class="font-display font-bold text-xl mb-2">Segurança Desarmada</h3>
+      <p class="text-sm text-slate-600 mb-4">Presença preventiva e ostensiva para condomínios, escolas, lojas e eventos — disciplina, cordialidade e controle.</p>
+      <span class="text-navy-800 text-sm font-bold">Ver detalhes →</span>
+    </a>
+    <a href="servicos/seguranca-pessoal.html" class="reveal reveal-d2 card-lift group bg-white rounded-3xl p-7 border border-slate-200">
+      <div class="w-12 h-12 rounded-2xl bg-navy-900 grid place-items-center mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E3BB3B" stroke-width="2.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+      <h3 class="font-display font-bold text-xl mb-2">Segurança Pessoal / Escolta</h3>
+      <p class="text-sm text-slate-600 mb-4">Proteção VIP de executivos, autoridades e famílias — discrição absoluta, planejamento de rotas e condução defensiva.</p>
+      <span class="text-navy-800 text-sm font-bold">Ver detalhes →</span>
+    </a>
+    <a href="servicos/portaria.html" class="reveal card-lift group bg-white rounded-3xl p-7 border border-slate-200">
+      <div class="w-12 h-12 rounded-2xl bg-navy-900 grid place-items-center mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E3BB3B" stroke-width="2.2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h4M7 13h7M7 17h10"/></svg></div>
+      <h3 class="font-display font-bold text-xl mb-2">Portaria & Controle de Acesso</h3>
+      <p class="text-sm text-slate-600 mb-4">Porteiros treinados + catracas, biometria e software de gestão. Acolhimento profissional com segurança real.</p>
+      <span class="text-navy-800 text-sm font-bold">Ver detalhes →</span>
+    </a>
+    <a href="servicos/limpeza.html" class="reveal reveal-d1 card-lift group bg-white rounded-3xl p-7 border border-slate-200">
+      <div class="w-12 h-12 rounded-2xl bg-navy-900 grid place-items-center mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E3BB3B" stroke-width="2.2"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg></div>
+      <h3 class="font-display font-bold text-xl mb-2">Limpeza & Conservação</h3>
+      <p class="text-sm text-slate-600 mb-4">Equipes uniformizadas, checklists diários, insumos gerenciados e supervisão — padrão hospitalar de qualidade.</p>
+      <span class="text-navy-800 text-sm font-bold">Ver detalhes →</span>
+    </a>
+    <a href="servicos/eletronica.html" class="reveal reveal-d2 card-lift group bg-gradient-to-br from-navy-800 to-navy-950 text-white rounded-3xl p-7">
+      <div class="w-12 h-12 rounded-2xl bg-gold grid place-items-center mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="2.2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+      <h3 class="font-display font-bold text-xl mb-2">Segurança Eletrônica 24h</h3>
+      <p class="text-sm text-white/65 mb-4">CFTV, alarmes, cercas, controle facial e monitoramento à distância com central própria e resposta tática.</p>
+      <span class="text-gold-light text-sm font-bold">Ver detalhes →</span>
+    </a>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="bg-navy-950 text-white py-16 lg:py-24 relative overflow-hidden">
+  <div class="absolute inset-0 hero-grid opacity-60"></div>
+  <div class="relative max-w-7xl mx-auto px-4">
+    <div class="reveal max-w-2xl mb-12"><p class="text-xs font-bold uppercase tracking-[.25em] text-gold-light mb-2">Por que a Office</p>
+    <h2 class="font-display font-extrabold text-3xl sm:text-4xl">Operação auditável. Gente treinada. Tecnologia de verdade.</h2></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal glass rounded-3xl p-6"><p class="font-display font-extrabold text-4xl gold-text mb-2">01</p><h3 class="font-bold mb-2">Know-how + compromisso</h3><p class="text-sm text-white/60">Time com 30+ anos de estrada, recrutamento seletivo, exames admissionais/periódicos e reciclagem exigida pela PF.</p></div>
+      <div class="reveal reveal-d1 glass rounded-3xl p-6"><p class="font-display font-extrabold text-4xl gold-text mb-2">02</p><h3 class="font-bold mb-2">Tecnologia moderna</h3><p class="text-sm text-white/60">Ronda com QR/NFC, CFTV com IA, controle de acesso biométrico e app de supervisão com evidências em tempo real.</p></div>
+      <div class="reveal reveal-d2 glass rounded-3xl p-6"><p class="font-display font-extrabold text-4xl gold-text mb-2">03</p><h3 class="font-bold mb-2">Poder de negociação</h3><p class="text-sm text-white/60">Contrato global (segurança + portaria + limpeza) com SLA, sem custo de admissão/demissão e previsibilidade total.</p></div>
+      <div class="reveal reveal-d3 glass rounded-3xl p-6"><p class="font-display font-extrabold text-4xl gold-text mb-2">04</p><h3 class="font-bold mb-2">Assistência 24 horas</h3><p class="text-sm text-white/60">Central própria 24/7, plantão operacional, equipe de reserva e resposta imediata. Fale no <a class="text-gold-light font-bold" href="https://wa.me/5562992909444" target="_blank" rel="noopener">(62) 99290-9444</a>.</p></div>
+    </div>
+    <div class="reveal mt-12 grid lg:grid-cols-3 gap-6 items-stretch">
+      <div class="lg:col-span-2 rounded-3xl overflow-hidden border border-white/10 grid sm:grid-cols-2">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1000&auto=format&fit=crop" class="h-64 sm:h-full w-full object-cover" alt="Central de monitoramento com múltiplas telas">
+        <div class="p-8 bg-navy-900"><h3 class="font-display font-bold text-2xl mb-3">Certificação federal, <span class="gold-text">cobertura garantida</span></h3><ul class="space-y-2.5 text-sm text-white/70"><li>✓ Empresa autorizada — Polícia Federal</li><li>✓ Plantão operacional 24h + reservas</li><li>✓ Checklists diários e relatórios mensais</li><li>✓ Uniforme, identificação e EPIs completos</li><li>✓ LGPD e confidencialidade contratual</li></ul><a href="sobre.html" class="inline-block mt-5 text-gold-light font-bold text-sm">Conhecer a empresa →</a></div>
+      </div>
+      <div class="rounded-3xl bg-gold text-navy-950 p-8 flex flex-col justify-between">
+        <div><p class="text-xs font-extrabold uppercase tracking-[.2em] mb-2">Cobertura</p><h3 class="font-display font-extrabold text-3xl leading-tight">GO · MT<br>PB</h3><p class="mt-3 text-sm font-medium">Goiânia (62) 3434-3432<br>Mato Grosso (65) 99202-8167<br>Paraíba (83) 3185-5104</p></div>
+        <a href="contato.html" class="mt-6 bg-navy-950 text-white text-center font-bold py-3 rounded-xl hover:bg-navy-800 transition">Falar com a central</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="max-w-7xl mx-auto px-4 py-16 lg:py-24">
+  <div class="reveal text-center max-w-2xl mx-auto mb-12"><p class="text-xs font-bold uppercase tracking-[.25em] text-gold mb-2">Do contato à operação</p><h2 class="font-display font-extrabold text-3xl sm:text-4xl">Implantação em 4 passos, sem dor de cabeça</h2></div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="reveal bg-white border border-slate-200 rounded-3xl p-6 card-lift"><span class="text-xs font-extrabold bg-navy-900 text-gold-light px-3 py-1 rounded-full">PASSO 1</span><h3 class="font-bold mt-4 mb-2">Diagnóstico gratuito</h3><p class="text-sm text-slate-600">Visita técnica + matriz de risco do seu condomínio, empresa ou obra. Você recebe um plano sob medida.</p></div>
+    <div class="reveal reveal-d1 bg-white border border-slate-200 rounded-3xl p-6 card-lift"><span class="text-xs font-extrabold bg-navy-900 text-gold-light px-3 py-1 rounded-full">PASSO 2</span><h3 class="font-bold mt-4 mb-2">Proposta com SLA</h3><p class="text-sm text-slate-600">Preço fechado por posto, metas de cobertura, supervisão e penalidades por descumprimento. Tudo em contrato.</p></div>
+    <div class="reveal reveal-d2 bg-white border border-slate-200 rounded-3xl p-6 card-lift"><span class="text-xs font-extrabold bg-navy-900 text-gold-light px-3 py-1 rounded-full">PASSO 3</span><h3 class="font-bold mt-4 mb-2">Implantação assistida</h3><p class="text-sm text-slate-600">Equipe uniformizada, crachás, EPIs, ronda configurada e treinamento no seu regulamento interno.</p></div>
+    <div class="reveal reveal-d3 bg-white border border-slate-200 rounded-3xl p-6 card-lift"><span class="text-xs font-extrabold bg-navy-900 text-gold-light px-3 py-1 rounded-full">PASSO 4</span><h3 class="font-bold mt-4 mb-2">Gestão contínua</h3><p class="text-sm text-slate-600">Supervisão em campo, relatórios mensais, reuniões de performance e reposição imediata de faltas.</p></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="bg-navy-900 text-white py-16 lg:py-24 overflow-hidden">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="reveal flex items-end justify-between mb-8"><div><p class="text-xs font-bold uppercase tracking-[.25em] text-gold-light mb-2">Quem confia</p><h2 class="font-display font-extrabold text-3xl sm:text-4xl">Clientes que dormem tranquilos</h2></div>
+    <div class="hidden sm:flex gap-2"><button id="depo-prev" class="w-11 h-11 rounded-full glass grid place-items-center hover:bg-white/20" aria-label="Anterior">←</button><button id="depo-next" class="w-11 h-11 rounded-full glass grid place-items-center hover:bg-white/20" aria-label="Próximo">→</button></div></div>
+    <div class="reveal overflow-hidden rounded-3xl"><div id="depo-track" class="flex transition-transform duration-500">
+      <article class="min-w-full glass p-8 sm:p-10"><p class="text-lg leading-relaxed text-white/85">“Terceirizamos portaria e vigilância com a Office e o nível de ocorrências caiu drasticamente. Supervisão presente, relatórios claros e reposição que realmente funciona.”</p><footer class="mt-6 flex items-center gap-3"><span class="w-11 h-11 rounded-full bg-gold grid place-items-center font-extrabold text-navy-950">RC</span><div><p class="font-bold">Ricardo Campos</p><p class="text-xs text-white/55">Síndico · Condomínio residencial, Goiânia</p></div><span class="ml-auto text-gold-light">★★★★★</span></footer></article>
+      <article class="min-w-full glass p-8 sm:p-10"><p class="text-lg leading-relaxed text-white/85">“A equipe armada é extremamente profissional. Documentação da PF em dia, reciclagem comprovada e postura impecável na nossa planta industrial.”</p><footer class="mt-6 flex items-center gap-3"><span class="w-11 h-11 rounded-full bg-gold grid place-items-center font-extrabold text-navy-950">MA</span><div><p class="font-bold">Mariana Alves</p><p class="text-xs text-white/55">Gerente Administrativa · Indústria, Aparecida de Goiânia</p></div><span class="ml-auto text-gold-light">★★★★★</span></footer></article>
+      <article class="min-w-full glass p-8 sm:p-10"><p class="text-lg leading-relaxed text-white/85">“Contratamos limpeza + portaria num pacote só. Reduzimos custo com dois fornecedores e ganhamos um único SLA para cobrar. Recomendo de olhos fechados.”</p><footer class="mt-6 flex items-center gap-3"><span class="w-11 h-11 rounded-full bg-gold grid place-items-center font-extrabold text-navy-950">JT</span><div><p class="font-bold">João Tavares</p><p class="text-xs text-white/55">Diretor · Rede varejista, MT</p></div><span class="ml-auto text-gold-light">★★★★★</span></footer></article>
+    </div></div>
+    <div id="depo-dots" class="flex gap-2 justify-center mt-6"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="max-w-4xl mx-auto px-4 py-16 lg:py-24">
+  <div class="reveal text-center mb-10"><p class="text-xs font-bold uppercase tracking-[.25em] text-gold mb-2">Dúvidas frequentes</p><h2 class="font-display font-extrabold text-3xl sm:text-4xl">Perguntas que todo contratante faz</h2></div>
+  <div class="space-y-3">
+    <div class="faq-item reveal bg-white border border-slate-200 rounded-2xl overflow-hidden"><button class="w-full flex items-center justify-between gap-4 text-left font-bold px-6 py-5">Por que terceirizar em vez de contratar direto?<span class="faq-chevron text-gold">⌄</span></button><div class="faq-answer"><div class="overflow-hidden"><p class="px-6 pb-6 text-sm text-slate-600">Você elimina passivo trabalhista, custo de seleção, treinamento, uniformes, reposição de faltas e gestão de escala. A Office assume tudo com SLA contratual — e você foca na sua atividade-fim.</p></div></div></div>
+    <div class="faq-item reveal bg-white border border-slate-200 rounded-2xl overflow-hidden"><button class="w-full flex items-center justify-between gap-4 text-left font-bold px-6 py-5">Qual a diferença entre vigilante, vigia e porteiro?<span class="faq-chevron text-gold">⌄</span></button><div class="faq-answer"><div class="overflow-hidden"><p class="px-6 pb-6 text-sm text-slate-600">Vigilante tem formação e registro na Polícia Federal e pode atuar armado — salário e responsabilidade maiores. Vigias e porteiros não têm registro na PF nem porte de arma, com custo menor. Desconfie de quem oferece "vigilante armado" sem autorização da PF.</p></div></div></div>
+    <div class="faq-item reveal bg-white border border-slate-200 rounded-2xl overflow-hidden"><button class="w-full flex items-center justify-between gap-4 text-left font-bold px-6 py-5">Como verifico se a empresa é legalizada?<span class="faq-chevron text-gold">⌄</span></button><div class="faq-answer"><div class="overflow-hidden"><p class="px-6 pb-6 text-sm text-slate-600">Consulte a autorização no portal da Polícia Federal (Segurança Privada), peça certidões negativas trabalhistas e do FGTS e confira a formação dos vigilantes. A Office fornece toda essa documentação antes da assinatura.</p></div></div></div>
+    <div class="faq-item reveal bg-white border border-slate-200 rounded-2xl overflow-hidden"><button class="w-full flex items-center justify-between gap-4 text-left font-bold px-6 py-5">E se o colaborador faltar?<span class="faq-chevron text-gold">⌄</span></button><div class="faq-answer"><div class="overflow-hidden"><p class="px-6 pb-6 text-sm text-slate-600">Mantemos equipe de reserva operacional e plantão 24h. Posto vago é coberto, e a falta é registrada em relatório — sem desconto surpresa na sua fatura.</p></div></div></div>
+    <div class="faq-item reveal bg-white border border-slate-200 rounded-2xl overflow-hidden"><button class="w-full flex items-center justify-between gap-4 text-left font-bold px-6 py-5">Vocês atendem quais cidades?<span class="faq-chevron text-gold">⌄</span></button><div class="faq-answer"><div class="overflow-hidden"><p class="px-6 pb-6 text-sm text-slate-600">Base em Goiânia-GO com atuação em todo Goiás, além de operações no Mato Grosso e na Paraíba. Projetos em outros estados são avaliados caso a caso.</p></div></div></div>
+  </div>
+</section>
+
+<!-- CTA ORÇAMENTO -->
+<section class="max-w-7xl mx-auto px-4 pb-16 lg:pb-24">
+  <div class="reveal relative overflow-hidden rounded-[2rem] bg-navy-950 text-white">
+    <div class="absolute inset-0 hero-grid"></div>
+    <div class="absolute -right-24 -top-24 w-96 h-96 bg-gold/20 blur-[100px] rounded-full"></div>
+    <div class="relative grid lg:grid-cols-2 gap-10 p-8 sm:p-12">
+      <div><h2 class="font-display font-extrabold text-3xl sm:text-4xl leading-tight">Solicite um atendimento <span class="gold-text">personalizado</span></h2>
+      <p class="mt-4 text-white/65">Preencha ao lado e receba contato comercial em horário útil — ou chame agora no WhatsApp. Atendimento geral: seg–sex 8h–18h, sáb 8h–12h. Emergências: plantão 24h.</p>
+      <div class="mt-6 flex flex-wrap gap-3 text-sm">
+        <a href="tel:+556234343432" class="glass px-4 py-2.5 rounded-xl font-bold">📞 (62) 3434-3432</a>
+        <a href="https://wa.me/5562992909444" target="_blank" rel="noopener" class="px-4 py-2.5 rounded-xl font-bold bg-green-500 text-navy-950 hover:bg-green-400 transition">WhatsApp 24h</a>
+      </div></div>
+      <form data-wa-form class="bg-white text-navy-950 rounded-3xl p-6 sm:p-8 space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div><label class="text-xs font-bold uppercase tracking-wider" for="c-nome">Nome*</label><input id="c-nome" name="Nome" required placeholder="Seu nome" class="mt-1 w-full border border-slate-300 rounded-xl px-4 py-3 text-sm"></div>
+          <div><label class="text-xs font-bold uppercase tracking-wider" for="c-fone">WhatsApp*</label><input id="c-fone" name="Telefone" required inputmode="tel" placeholder="(62) 9 0000-0000" class="mt-1 w-full border border-slate-300 rounded-xl px-4 py-3 text-sm"></div>
+        </div>
+        <div><label class="text-xs font-bold uppercase tracking-wider" for="c-serv">Serviço de interesse*</label><select id="c-serv" name="Serviço" required class="mt-1 w-full border border-slate-300 rounded-xl px-4 py-3 text-sm bg-white"><option value="">Selecione…</option><option>Segurança Armada</option><option>Segurança Desarmada</option><option>Segurança Pessoal</option><option>Portaria</option><option>Limpeza & Conservação</option><option>Segurança Eletrônica</option><option>Pacote completo (facilities)</option></select></div>
+        <div><label class="text-xs font-bold uppercase tracking-wider" for="c-msg">Detalhe sua necessidade</label><textarea id="c-msg" name="Mensagem" rows="3" placeholder="Ex.: condomínio com 2 torres, preciso de portaria 24h + ronda…" class="mt-1 w-full border border-slate-300 rounded-xl px-4 py-3 text-sm"></textarea></div>
+        <button class="btn-shine w-full bg-navy-950 text-white font-bold py-3.5 rounded-xl hover:bg-navy-800 transition">Enviar e abrir WhatsApp</button>
+        <p class="text-[11px] text-slate-500">Ao enviar, você concorda em ser contatado pela Office (LGPD — Lei 13.709/18). Nada de spam.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy-950 text-white border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div><div class="flex items-center gap-3 mb-4"><span class="w-10 h-10 rounded-xl bg-gold grid place-items-center font-extrabold text-navy-950 font-display">O</span><p class="font-display font-extrabold">OFFICE <span class="gold-text">SEGURANÇA</span></p></div>
+    <p class="text-sm text-white/55">Referência em segurança patrimonial em Goiás desde 2016. Ética, compromisso e confiabilidade em cada posto.</p>
+    <div class="flex gap-3 mt-5"><a href="https://www.instagram.com/officeseguranca" target="_blank" rel="noopener" class="glass px-3 py-2 rounded-lg text-sm font-bold hover:bg-white/15" aria-label="Instagram">Instagram</a><a href="https://br.linkedin.com/company/office-segurança" target="_blank" rel="noopener" class="glass px-3 py-2 rounded-lg text-sm font-bold hover:bg-white/15" aria-label="LinkedIn">LinkedIn</a></div></div>
+    <nav aria-label="Serviços"><p class="font-bold mb-4 text-gold-light">Serviços</p><ul class="space-y-2.5 text-sm text-white/65"><li><a class="hover:text-white" href="servicos/seguranca-armada.html">Segurança Armada</a></li><li><a class="hover:text-white" href="servicos/seguranca-desarmada.html">Segurança Desarmada</a></li><li><a class="hover:text-white" href="servicos/seguranca-pessoal.html">Segurança Pessoal</a></li><li><a class="hover:text-white" href="servicos/portaria.html">Portaria</a></li><li><a class="hover:text-white" href="servicos/limpeza.html">Limpeza & Conservação</a></li><li><a class="hover:text-white" href="servicos/eletronica.html">Segurança Eletrônica</a></li></ul></nav>
+    <nav aria-label="Institucional"><p class="font-bold mb-4 text-gold-light">Institucional</p><ul class="space-y-2.5 text-sm text-white/65"><li><a class="hover:text-white" href="sobre.html">A Office</a></li><li><a class="hover:text-white" href="orcamento.html">Simulador de orçamento</a></li><li><a class="hover:text-white" href="blog.html">Blog</a></li><li><a class="hover:text-white" href="trabalhe-conosco.html">Trabalhe Conosco</a></li><li><a class="hover:text-white" href="contato.html">Contato</a></li></ul></nav>
+    <div><p class="font-bold mb-4 text-gold-light">Entre em contato</p><ul class="space-y-2.5 text-sm text-white/65"><li>📍 Goiânia · GO — <a class="hover:text-white font-bold" href="tel:+556234343432">(62) 3434-3432</a></li><li>🌵 Mato Grosso — <a class="hover:text-white font-bold" href="tel:+5565992028167">(65) 99202-8167</a></li><li>🌊 Paraíba — <a class="hover:text-white font-bold" href="tel:+558331855104">(83) 3185-5104</a></li><li>💬 <a class="hover:text-white font-bold" href="https://wa.me/5562992909444" target="_blank" rel="noopener">(62) 99290-9444</a></li><li class="pt-2 text-white/45">Seg–Sex 8h–18h · Sáb 8h–12h<br>Emergências: plantão 24h</li></ul></div>
+  </div>
+  <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row gap-2 items-center justify-between text-xs text-white/45">
+    <p>© <span data-year>2026</span> Office Segurança — Todos os direitos reservados. Site-presente desenvolvido por <strong class="text-white/70">Thiago Vinicius de Souza Meireles</strong>.</p>
+    <p>Autorizada Polícia Federal · Lei nº 7.102/83 · LGPD Lei nº 13.709/18</p>
+  </div></div>
+</footer>
+
+<!-- FLUTUANTES -->
+<a href="https://wa.me/5562992909444?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp" class="no-print fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-green-500 grid place-items-center shadow-2xl hover:scale-110 transition"><svg width="28" height="28" viewBox="0 0 24 24" fill="#06281a"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.7 1.2 1.6 1.9 2.8 2.4.3.2.5.1.7-.1l.8-.9c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.4 0 .1 0 .5-.4 1.6z"/></svg></a>
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Voltar ao topo" class="no-print fixed bottom-5 left-5 z-50 w-12 h-12 rounded-full bg-navy-950 text-gold-light border border-white/15 grid place-items-center shadow-2xl opacity-0 pointer-events-none transition hover:bg-navy-800">↑</button>
+<div id="cookie-bar" class="no-print fixed bottom-0 inset-x-0 z-50 translate-y-full opacity-0"><div class="max-w-7xl mx-auto px-4 pb-4"><div class="bg-navy-950 text-white border border-white/15 rounded-2xl px-5 py-4 flex flex-col sm:flex-row gap-3 items-center justify-between shadow-2xl"><p class="text-xs text-white/70">Usamos cookies essenciais para melhorar sua experiência (LGPD). Ao continuar, você concorda.</p><button id="cookie-ok" class="bg-gold text-navy-950 text-sm font-bold px-5 py-2 rounded-xl shrink-0">Entendi</button></div></div></div>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>

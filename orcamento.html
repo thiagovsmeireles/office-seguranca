@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- OFFICE SEGURANÇA · Simulador | © 2026 Thiago Vinicius de Souza Meireles -->
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Orçamento | Office Segurança</title>
+<meta name="description" content="Simule em segundos o investimento em segurança armada, portaria, limpeza e monitoramento. Estimativa instantânea + proposta oficial no WhatsApp.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060D1A',900:'#0A1628',800:'#10233F'},gold:{DEFAULT:'#C9A227',light:'#E3BB3B'}}}}}</script>
+<link rel="stylesheet" href="assets/css/style.css"></head>
+<body class="bg-[#F6F7F9]">
+<header id="site-header" class="sticky top-0 z-50 bg-navy-900/95 border-b border-white/10"><div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-gold grid place-items-center font-extrabold text-navy-950">O</span><span class="font-display font-extrabold text-white">OFFICE <span class="gold-text">SEGURANÇA</span></span></a>
+<nav class="hidden lg:flex gap-6 text-sm text-white/80 font-medium"><a href="index.html" class="hover:text-white">Início</a><a href="sobre.html" class="hover:text-white">A Office</a><a href="orcamento.html" class="text-gold-light">Simulador</a><a href="contato.html" class="hover:text-white">Contato</a></nav>
+<button id="btn-menu" class="lg:hidden text-white p-2" aria-label="Abrir menu">☰</button></div>
+<div id="mobile-menu" class="hidden bg-navy-950 px-4 py-4 text-white"><a href="index.html" class="block py-2">Início</a><a href="contato.html" class="block py-2">Contato</a></div></header>
+
+<section class="max-w-6xl mx-auto px-4 py-14">
+<p class="text-xs font-bold uppercase tracking-[.25em] text-gold mb-2">Transparência total</p>
+<h1 class="font-display font-extrabold text-4xl sm:text-5xl tracking-tight">Simule seu investimento <span class="text-navy-800">em 30 segundos</span></h1>
+<p class="mt-3 text-slate-600 max-w-2xl">Valores de referência para planejamento. A proposta oficial considera visita técnica, matriz de risco e SLA — sem compromisso.</p>
+
+<div class="mt-8 grid lg:grid-cols-5 gap-6">
+<form id="simulador" class="lg:col-span-3 bg-white border rounded-3xl p-7 sm:p-9 space-y-5">
+<div><label class="text-xs font-bold uppercase tracking-wider" for="sim-servico">Serviço</label>
+<select id="sim-servico" class="mt-1 w-full border border-slate-300 rounded-xl px-4 py-3 text-sm bg-white"><option value="armada">Segurança Armada</option><option value="desarmada">Segurança Desarmada</option><option value="pessoal">Segurança Pessoal / Escolta</option><option value="portaria">Portaria / Controle de Acesso</option><option value="limpeza">Limpeza & Conservação</option><option value="eletronica">Segurança Eletrônica / Monitoramento</option></select></div>
+<div class="grid sm:grid-cols-2 gap-5">
+<div><label class="text-xs font-bold uppercase tracking-wider" for="sim-postos">Nº de postos <span id="sim-postos-out" class="text-gold font-extrabold">1</span></label>
+<input id="sim-postos" type="range" min="1" max="20" value="1" class="mt-3 w-full accent-[#C9A227]" oninput="document.getElementById('sim-postos-out').textContent=this.value"></div>
+<div><label class="text-xs font-bold uppercase tracking-wider" for="sim-turno">Turno / escala</label>
+<select id="sim-turno" class="mt-1 w-full border border-slate-300 rounded-xl px-4 py-3 text-sm bg-white"><option value="12x36-diurno">12x36 diurno</option><option value="12x36-noturno">12x36 noturno (+25%)</option><option value="24h">24h ininterrupto (x2.15)</option><option value="comercial">Comercial seg–sex 8h–18h</option></select></div></div>
+<div><label class="text-xs font-bold uppercase tracking-wider" for="sim-nome">Seu nome (para a proposta oficial)</label>
+<input id="sim-nome" placeholder="Ex.: Ana Souza — Condomínio Parque" class="mt-1 w-full border border-slate-300 rounded-xl px-4 py-3 text-sm"></div>
+<button class="btn-shine w-full bg-navy-950 text-white font-bold py-4 rounded-xl hover:bg-navy-800 transition">Receber proposta oficial no WhatsApp</button>
+<p class="text-[11px] text-slate-500">Estimativa orientativa. Impostos, periculosidade/noturno e insumos conforme convenção coletiva da categoria.</p>
+</form>
+<div class="lg:col-span-2 space-y-6">
+<div class="bg-navy-950 text-white rounded-3xl p-8"><p class="text-xs uppercase tracking-[.2em] text-gold-light font-bold">Estimativa mensal</p>
+<p id="sim-valor" class="font-display font-extrabold text-5xl mt-2">R$ 5.200</p>
+<p id="sim-detalhe" class="text-sm text-white/60 mt-2"></p>
+<div class="border-t border-white/10 mt-6 pt-5 text-sm text-white/70"><p>Implantação estimada (uniformes, treinamento, equipamentos): <strong id="sim-implant" class="text-gold-light">R$ 2.080</strong></p><p class="mt-2 text-xs">Condições especiais para contratos facilities (2+ serviços).</p></div></div>
+<div class="bg-white border rounded-3xl p-7 text-sm text-slate-600"><h2 class="font-display font-bold text-navy-950 text-lg mb-2">O que acontece depois?</h2><ol class="space-y-2"><li><strong>1.</strong> Você envia a simulação no WhatsApp.</li><li><strong>2.</strong> Agendamos visita técnica gratuita.</li><li><strong>3.</strong> Proposta formal com SLA em até 48h.</li></ol></div>
+</div></div></section>
+<footer class="bg-navy-950 text-white"><div class="max-w-7xl mx-auto px-4 py-6 flex justify-between text-xs text-white/45"><p>© <span data-year>2026</span> Office Segurança · por <strong class="text-white/70">Thiago Vinicius de Souza Meireles</strong>.</p><a href="index.html">← Início</a></div></footer>
+<script src="assets/js/app.js" defer></script></body></html>

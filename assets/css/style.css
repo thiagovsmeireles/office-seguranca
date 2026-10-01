@@ -1,0 +1,46 @@
+/* ==========================================================================
+   OFFICE SEGURANÇA — Portal Institucional Premium (2026)
+   © 2026 Thiago Vinicius de Souza Meireles — Todos os direitos reservados.
+   Autor: Thiago Vinicius de Souza Meireles
+   Licença de presente: uso exclusivo da Office Segurança.
+   Stack: HTML5 + Tailwind CSS (CDN) + Vanilla JS de última geração.
+   ========================================================================== */
+:root{
+  --navy-950:#060D1A; --navy-900:#0A1628; --navy-800:#10233F; --navy-700:#16315a;
+  --gold-500:#C9A227; --gold-400:#E3BB3B; --gold-100:#FBF3D5;
+  --paper:#F6F7F9; --ink:#0E1526;
+}
+*{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
+.font-display{font-family:'Sora','Archivo',sans-serif}
+.hero-grid{background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 90% 80% at 50% 20%,black 60%,transparent 100%)}
+.gold-text{background:linear-gradient(100deg,#F5DE8B,#C9A227 45%,#F7E7A5 70%,#A8841B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.glass{background:rgba(255,255,255,.07);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.14)}
+.card-lift{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.card-lift:hover{transform:translateY(-8px);box-shadow:0 24px 60px -18px rgba(6,13,26,.35)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+.reveal-d1{transition-delay:.08s}.reveal-d2{transition-delay:.16s}.reveal-d3{transition-delay:.24s}
+.ticker-track{display:flex;gap:3rem;animation:ticker 26s linear infinite;width:max-content}
+@keyframes ticker{to{transform:translateX(-50%)}}
+.hero-photo{box-shadow:0 40px 90px -30px rgba(0,0,0,.65)}
+.float-slow{animation:floaty 7s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.pulse-dot{position:relative}
+.pulse-dot::after{content:'';position:absolute;inset:-6px;border-radius:9999px;border:2px solid #22c55e;animation:ping2 1.8s ease-out infinite}
+@keyframes ping2{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.4);opacity:0}}
+.faq-answer{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}
+.faq-item.open .faq-answer{grid-template-rows:1fr}
+.faq-item.open .faq-chevron{transform:rotate(180deg)}
+.faq-chevron{transition:transform .3s}
+input,select,textarea{outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--gold-500)!important;box-shadow:0 0 0 3px rgba(201,162,39,.22)}
+.btn-shine{position:relative;overflow:hidden}
+.btn-shine::before{content:'';position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);transition:left .6s}
+.btn-shine:hover::before{left:130%}
+#cookie-bar{transition:transform .5s ease,opacity .5s}
+.marquee-img{filter:grayscale(1) brightness(1.6);opacity:.55}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+.prose-dark p{color:#C7D0E0}
+@media print{.no-print{display:none!important}}

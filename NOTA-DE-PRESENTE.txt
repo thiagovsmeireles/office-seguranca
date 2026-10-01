@@ -1,0 +1,29 @@
+╔══════════════════════════════════════════════════════════════╗
+║                    🎁  NOTA DE PRESENTE  🎁                   ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  Para: OFFICE SEGURANÇA                                      ║
+║  De: Thiago Vinicius de Souza Meireles                       ║
+║                                                              ║
+║  "Equipe Office,                                            ║
+║                                                              ║
+║   Este novo portal foi feito com admiração pelo trabalho     ║
+║   de vocês — ética, compromisso e confiabilidade desde       ║
+║   2016. Que este presente ajude a empresa a conquistar       ║
+║   ainda mais clientes e a mostrar ao mercado o padrão        ║
+║   de excelência que já existe na operação.                   ║
+║                                                              ║
+║   Com orgulho de fazer parte dessa história."                ║
+║                                                              ║
+║   — Thiago Vinicius de Souza Meireles, outubro/2026          ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+COMO USAR ESTE PRESENTE:
+1. Extraia o ZIP em qualquer pasta.
+2. Abra o arquivo index.html (clique duplo) — o site funciona
+   direto no navegador, sem instalar nada.
+3. Para publicar: suba a pasta inteira para qualquer hospedagem
+   (HostGator, Hostinger, Netlify, Vercel) ou peça ao suporte
+   do provedor atual para substituir os arquivos do WordPress.
+4. Telefones/WhatsApp já estão com os números reais da empresa.
