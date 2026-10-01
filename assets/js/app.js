@@ -87,8 +87,8 @@ $$('.faq-item').forEach(item=>{
 /* ---------- simulador de orçamento ---------- */
 const simForm=$('#simulador');
 if(simForm){
-  const tabela={armada:5200,desarmada:3400,pessoal:6800,portaria:3100,limpeza:2900,eletronica:1500};
-  const nomes={armada:'Segurança Armada',desarmada:'Segurança Desarmada',pessoal:'Segurança Pessoal / Escolta',portaria:'Portaria / Controle de Acesso',limpeza:'Limpeza & Conservação',eletronica:'Segurança Eletrônica / Monitoramento'};
+  const tabela={armada:5200,desarmada:3400,pessoal:6800,portaria:3100,limpeza:2900};
+  const nomes={armada:'Segurança Armada',desarmada:'Segurança Desarmada',pessoal:'Segurança Pessoal / Escolta',portaria:'Portaria / Controle de Acesso',limpeza:'Limpeza & Conservação'};
   const calc=()=>{
     const servico=$('#sim-servico')?.value||'armada';
     const postos=parseInt($('#sim-postos')?.value||'1',10);

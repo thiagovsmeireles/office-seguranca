@@ -11,7 +11,7 @@ Redesenho completo e moderno de `officeseguranca.com.br`, feito de presente à e
 
 ## Páginas (13 arquivos)
 - `index.html` — home premium: hero, stats animados, 6 serviços, diferenciais, implantação em 4 passos, depoimentos (slider real), FAQ, formulário → WhatsApp, footer completo
-- `servicos/seguranca-armada.html` · `seguranca-desarmada.html` · `seguranca-pessoal.html` · `portaria.html` · `limpeza.html` · `eletronica.html`
+- `servicos/seguranca-armada.html` · `seguranca-desarmada.html` · `seguranca-pessoal.html` · `portaria.html` · `limpeza.html`
 - `sobre.html` — história, valores, linha do tempo
 - `orcamento.html` — **simulador funcional** (serviço × postos × turno → estimativa + envio ao WhatsApp real)
 - `trabalhe-conosco.html` — candidatura com validação de PDF (5 MB) → WhatsApp
